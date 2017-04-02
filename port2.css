@@ -1,0 +1,190 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	max-width: 1024px;
+	margin: 75px auto 0 auto;
+}
+
+strong {
+	color: #cc1010;
+}
+
+#name{
+	font-size: 40px;
+	font-weight: 700;
+	color: #cc1010;
+}
+
+header {
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 5px solid #cc1010;
+}
+
+/* Navigation CSS  for style and drop down*/
+#trans-nav { 
+	list-style-type: none; 
+	height: 40px; 
+	padding: 0 40px; 
+	margin: 0; 
+}
+
+#trans-nav li { 
+	float: right; 
+	position: relative; 
+	padding: 0 30px; 
+	line-height: 40px;
+}
+
+#trans-nav li:hover { 
+	background-position: 0 -40px;
+}
+
+#trans-nav li a { 
+	display: block; 
+	padding: 0 25px; 
+	color: #cc1010; 
+	text-decoration: none;
+}
+
+#trans-nav li ul { 
+	opacity: 0; 
+	position: absolute; 
+	left: 0; 
+	width: 10em; 
+	background: ; 
+	list-style-type: none; 
+	padding: 0; 
+	margin: 0;
+}
+
+#trans-nav li:hover ul { 
+	opacity: 1;
+}
+#trans-nav li ul li { 
+	float: none; 
+	position: static; 
+	height: 0; 
+    line-height: 0; 
+    background: none;
+}
+#trans-nav li:hover ul li { 
+	height: 30px;
+	line-height: 30px; 
+}
+#trans-nav li ul li a { 
+	background: #fff;
+	}
+#trans-nav li ul li a:hover { 
+	background: #cc1010;
+	color: white; 
+}
+
+/* End Nav CSS */
+
+/* My bio CSS */
+
+article {
+	width: 100%;
+}
+
+#biocontainer{
+	
+}
+
+.circularpic{
+	width: 200px;
+	height: 200px;
+	margin-right: 50px;
+	position: relative;
+}
+
+.circularpic img {
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px 0px black;
+}
+
+#shortbio {
+	width: 59%;
+	position: relative;
+	left: 250px;
+	bottom: 225px;
+	font-size: 24px;
+}
+
+/*skill CSS*/
+#wrap {
+	text-align: center;
+}
+
+#skills {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.iconSize {
+	width: 100px;
+	height: 100px;
+}
+
+.shadowbox{
+	overflow: hidden;
+	padding: 10px 0px;
+}
+
+.skill_container {
+	position: relative;
+	text-align: center;
+    padding: 50px 0;
+    box-shadow: 0px 0px 10px #898989;
+}
+
+.skill_container span{
+	display: inline-block;
+	width: 75%;
+}
+
+#html_container {
+	width: 45%;
+}
+
+#css_container{
+	width: 45%;
+}
+
+#git_container{
+	width: 45%;
+	margin-top: 50px;
+}
+
+#jQuery_container{
+	width: 45%;
+	margin-top: 50px;
+}
+
+
+/*Contacts CSS*/
+
+#contacts {
+	font-size: 40px;
+	display: inline-block;
+}
+
+.contact_container{
+	margin-bottom: 150px;
+	font-size: 18px;
+}
+
+#email{
+	font-size: 36px;
+}
+/*Footer*/
+
+footer{
+	height: 300px;
+	width: 100%;
+	background-color:#cc1010;
+}
