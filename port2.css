@@ -1,190 +1,130 @@
-body {
-	font-family: 'Oswald', sans-serif;
-	max-width: 1024px;
-	margin: 75px auto 0 auto;
-}
-
-strong {
-	color: #cc1010;
-}
-
-#name{
-	font-size: 40px;
-	font-weight: 700;
-	color: #cc1010;
-}
 
 header {
-	padding-bottom: 50px;
-	margin-bottom: 50px;
-	border-bottom: 5px solid #cc1010;
+	text-align: center;
+}
+strong{
+	color: #CC1010;
+}
+#name{
+	color: #CC1010;
+	display: inline-block;
+	width: 100%;
 }
 
-/* Navigation CSS  for style and drop down*/
-#trans-nav { 
-	list-style-type: none; 
-	height: 40px; 
-	padding: 0 40px; 
-	margin: 0; 
+body {
+	font-size: 1em;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
 }
 
-#trans-nav li { 
-	float: right; 
-	position: relative; 
-	padding: 0 30px; 
-	line-height: 40px;
+img {
+	width: 50%;
 }
 
-#trans-nav li:hover { 
-	background-position: 0 -40px;
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-#trans-nav li a { 
-	display: block; 
-	padding: 0 25px; 
-	color: #cc1010; 
+nav a:hover {
 	text-decoration: none;
 }
 
-#trans-nav li ul { 
-	opacity: 0; 
-	position: absolute; 
-	left: 0; 
-	width: 10em; 
-	background: ; 
-	list-style-type: none; 
-	padding: 0; 
-	margin: 0;
-}
-
-#trans-nav li:hover ul { 
-	opacity: 1;
-}
-#trans-nav li ul li { 
-	float: none; 
-	position: static; 
-	height: 0; 
-    line-height: 0; 
-    background: none;
-}
-#trans-nav li:hover ul li { 
-	height: 30px;
-	line-height: 30px; 
-}
-#trans-nav li ul li a { 
-	background: #fff;
-	}
-#trans-nav li ul li a:hover { 
-	background: #cc1010;
-	color: white; 
-}
-
-/* End Nav CSS */
-
-/* My bio CSS */
-
-article {
+#main_wrapper {
 	width: 100%;
 }
-
-#biocontainer{
-	
+#bio_container {
+	text-align: center;
 }
 
-.circularpic{
-	width: 200px;
-	height: 200px;
-	margin-right: 50px;
-	position: relative;
-}
-
-.circularpic img {
-	width: inherit;
-	height: inherit;
+#bio_container img {
 	border-radius: 50%;
-	box-shadow: 0px 0px 15px 0px black;
+	box-shadow: 0 0 .3em 0;
+	margin: 1em 0;
 }
 
-#shortbio {
-	width: 59%;
-	position: relative;
-	left: 250px;
-	bottom: 225px;
-	font-size: 24px;
+#bio_container p {
+	text-align: justify;
 }
 
-/*skill CSS*/
-#wrap {
+.wrap {
 	text-align: center;
+	margin: 2em 0;
+	padding: 1em 0;
+}
+.wrap span {
+	text-align: justify;
 }
 
-#skills {
-	display: inline-block;
-	font-size: 40px;
-	font-weight: 700;
-	margin: 0;
+.wrap img {
+	width: 6.25em;
+	display: block;
+	margin: 0 auto;
 }
-
-.iconSize {
-	width: 100px;
-	height: 100px;
-}
-
-.shadowbox{
-	overflow: hidden;
-	padding: 10px 0px;
-}
-
-.skill_container {
-	position: relative;
-	text-align: center;
-    padding: 50px 0;
-    box-shadow: 0px 0px 10px #898989;
-}
-
-.skill_container span{
-	display: inline-block;
-	width: 75%;
-}
-
-#html_container {
-	width: 45%;
-}
-
-#css_container{
-	width: 45%;
-}
-
-#git_container{
-	width: 45%;
-	margin-top: 50px;
-}
-
-#jQuery_container{
-	width: 45%;
-	margin-top: 50px;
-}
-
-
-/*Contacts CSS*/
 
 #contacts {
-	font-size: 40px;
-	display: inline-block;
+	margin-bottom: 0.5em;
 }
 
-.contact_container{
-	margin-bottom: 150px;
-	font-size: 18px;
+.back_container {
+	box-shadow: 0 0 0.3em 0;
 }
 
-#email{
-	font-size: 36px;
+/*BEGIN NAVIGATION CSS*/
+ul li a {
+	color: black;
 }
-/*Footer*/
 
-footer{
-	height: 300px;
-	width: 100%;
-	background-color:#cc1010;
+ul li a:visited {
+	color: black;
+}
+
+.dropdown-item:active {
+	background-color: #CC1010;
+	color: white;
+}
+
+/*END NAVIGATION CSS*/
+
+@media screen and (min-width: 379px){
+	img {
+		max-width: 12em;
+	}
+	#bio_container p{
+		font-size: 1.2em;
+	}
+
+}
+
+@media screen and (min-width: 427px){
+	#bio_container p {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (min-width: 500px){
+	#bio_container p {
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 792px){
+	#bio_container {
+		display: flex;
+		justify-content: space-around;
+		
+	}
+
+	#bio_container img {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	#bio_container p {
+		flex: 1, 1, auto;
+		margin: auto;
+	}
 }
