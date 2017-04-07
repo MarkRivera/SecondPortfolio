@@ -11,6 +11,11 @@ strong{
 	width: 100%;
 }
 
+#name a {
+	text-decoration: none;
+	color: #CC1010;
+}
+
 body {
 	font-size: 1em;
 	width: 100%;
@@ -28,8 +33,9 @@ nav ul {
 	padding: 0;
 }
 
-nav a:hover {
+a:hover {
 	text-decoration: none;
+	color: black;
 }
 
 #main_wrapper {
@@ -81,6 +87,7 @@ ul li a:visited {
 	color: black;
 }
 
+
 .dropdown-item:active {
 	background-color: #CC1010;
 	color: white;
@@ -88,19 +95,88 @@ ul li a:visited {
 
 /*END NAVIGATION CSS*/
 
+/*Portfolio Main CSS*/
+
+.page_box a{
+	display: inline-block;
+	width: 100%;
+}
+
+.page_box img {
+	width: 100%;
+}
+
+.page_box {
+	position: relative;
+}
+
+.challenge_box {
+	position: absolute;
+}
+
+
+/*End Portfolio Main CSS*/
+
 @media screen and (min-width: 379px){
 	img {
-		max-width: 12em;
+		width: 12em;
 	}
 	#bio_container p{
 		font-size: 1.2em;
 	}
 
+	.page_box img {
+		width: 100%;
+	}
+
+	.page_box p {
+	font-size: 1.2em;
+	}
+
+}
+@media screen and (min-width: 386px){
+	.back_container span {
+		font-size: 1.1em;
+	}
 }
 
 @media screen and (min-width: 427px){
+	.page_box p {
+		font-size: 1.5em;
+	}
 	#bio_container p {
 		font-size: 1.3em;
+	}
+	.back_container span {
+		font-size: 1.2em;
+	}
+
+	#html_container {
+	max-width: 30em;
+	display: inline-block;
+	margin: 2em;
+	}
+
+	#css_container {
+	max-width: 30em;
+	display: inline-block;
+	margin: 2em;
+	}
+
+	#git_container {
+	max-width: 30em;
+	display: inline-block;
+	margin: 2em;
+	}
+
+	#jQuery_container {
+	max-width: 30em;
+	display: inline-block;
+	margin: 2em;
+	}
+
+	.back_container {
+		text-align: center;
 	}
 }
 
@@ -109,22 +185,82 @@ ul li a:visited {
 		width: 500px;
 		margin: 0 auto;
 	}
+	.page_box{
+		text-align: center;
+	}
+	.page_box a, img, p {
+	max-width: 500px;
+	margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 572px){
+	.dropdown-menu {
+	left: 35%;
+	}
 }
 
 @media screen and (min-width: 792px){
 	#bio_container {
 		display: flex;
 		justify-content: space-around;
-		
+		flex-flow: row wrap;
+		margin: 100px auto;
+		max-width: 800px;	
 	}
 
 	#bio_container img {
 		display: block;
-		width: 100%;
-		margin: auto;
+		width: 250px;
 	}
 	#bio_container p {
 		flex: 1, 1, auto;
 		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1085px){
+	body{
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.back_container {
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		margin: auto;
+		padding: 2em 0;
+		align-content: center;
+		max-width: 1300px;
+	}
+	.shadowbox {
+		width: 1300px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 5px 0;
+	}
+
+	#html_container {
+		margin: 0;
+	}
+
+	#css_container {
+		margin: 0;
+	}
+
+	#git_container {
+		margin: 0;
+	}
+
+	#jQuery_container {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.page_box {
+		display: flex;
+		justify-content: space-between;
+		margin: 5em 0;
 	}
 }
