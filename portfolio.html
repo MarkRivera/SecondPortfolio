@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Mark Rivera's Portfolio</title>
+    <meta name="description" content = "A display of my current work for you to see"/>
+    <meta name="keywords" content="Portfolio, Work, HTML, Coding, Resume, Skill, Mark, Rivera"/>
+    <meta name="author" content="Mark Rivera"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/80dec7cd28.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="port2.css">
+</head>
+<body>
+ <header>
+    <span id="name"><h1><a href="index.html">Mark Rivera</a></h1></span>
+    <ul class="nav nav-fill">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Work</a>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+        <a class="dropdown-item disabled" href="#">Resume</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="index.html #skills">Skills</a>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact Me</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://github.com/MarkRivera">Git Hub</a>
+            <a class="dropdown-item" href="http://codepen.io/MarkRivera/#">Code Pen</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/mark-rivera-3a947197/">LinkedIn</a>
+            <a class="dropdown-item" href="index.html #email">Email</a>
+        </div>
+        </li>
+    </ul>
+</header>
+<main>
+<!--Modal-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">What I Faced</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Implementing the map proved to be demanding but I got it to work after a few adjustments. I'm proud that it searches for you the closest observatories near your location incase you ever wanted to look at the stars yourself.
+
+        This site taught me more about implementing responsive elements to create a comfortable user experience across viewport sizes.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary clsBtn">I Love Space!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Modal -->
+
+<section>
+    <article class="web_pages">
+        <div class="page_box">
+        <a href="https://markrivera.github.io/AlbertSpaceCenter/"><img src="Photos\ASC.png" alt="Tribute to Albert" class="img-fluid"></a>
+        <p>A small mock tribute site, to the world's smartest man. With a genius like him he still has a following even one hundred years later. I had a lot of fun building this as I was able to stretch my AJAX muscles thanks to google maps! The page features brief explainations and photos to guide you through the universe.</p>
+        <!-- Modal Button -->
+        <div class="challenge_box btn btn-primary" id="first_one"><h4><a data-toggle="modal" data-target="#myModal">
+        Challenges
+        </a></h4></div>
+        </div>
+
+        <div class="page_box">
+        <a href="https://markrivera.github.io/WebPortfolio/"><img src="Photos\OWP.png" alt="Old Portfolio"></a>
+        <p>Here's my old portfolio where I experimented on cleaner code and creating animation effects in CSS. I also dove into compressing photos to improve performance on mobile devices.</p>
+        <!--Modal Button-->
+        <div class="challenge_box btn btn-primary" id="second_one"><h4><a data-toggle="modal" data-target="#myModal">
+        Challenges
+        </a></h4></div>
+        </div>
+        </div>
+
+        <div class = "page_box">
+        <a href="http://codepen.io/MarkRivera/full/PWgyJz/"><img src="Photos\FallTemp.png"></a>
+        <p>This weather app I designed tells you the temperature depending on your location. I used AJAX to get weather information from a weather API. I also called an IP API to get your location information for the weather. The coolest part is that the background changes depending on how warm it is.
+        </p>
+        <!--Modal Button-->
+        <div class="challenge_box btn btn-primary" id="third_one"><h4><a data-toggle="modal" data-target="#myModal">
+        Challenges
+        </a></h4></div>
+        </div>
+        </div>
+
+        <div class = "page_box">
+            <a href="http://codepen.io/MarkRivera/full/WRmQgV/"><img src="Photos\inspiration.png"></a>
+            <p>
+            I created inspiration to give you a quote whenever you needed it. It works by reaching out to a quote API and randomly selecting a quote from the data object I get back. To make the user feel good about clicking, the website responds by changing colors and quotes.
+            </p>
+            <!-- Modal Button -->
+            <div class="challenge_box btn btn-primary" id="fourth_one"><h4><a data-toggle="modal" data-target="#myModal">
+            Challenges
+            </a></h4></div>
+            </div>
+            </div>
+
+        <div class = "page_box">
+            <a href="http://codepen.io/MarkRivera/full/EWaggO/"><img src="Photos\TwitchApp.png"></a>
+            <p>I have a few favorite streamers that I like to watch, and I wanted to create something that told me if they were online. So, using the twitch API
+                I was able to keep track of their online status, what their title is and link their streams all in one place.
+            </p>
+            <!-- Modal Button -->
+            <div class="challenge_box btn btn-primary" id="fifth_one"><h4><a data-toggle="modal" data-target="#myModal">
+            Challenges
+            </a></h4></div>
+            </div>
+        </div>
+
+        <div class = "page_box">
+            <a href="http://codepen.io/MarkRivera/full/XMBxrP/"><img src="Photos\KeyBoard.png"></a>
+            <p>(Chrome Only!) I saw a neat program that showed which keys were pressed on a keyboard once. So I wanted to replicate that
+                on a browser. So unfortunately I only designed it to work on Chrome browsers but I'll remake this again one day to support
+                all modern ones.
+            </p>
+            <!-- Modal Button -->
+            <div class="challenge_box btn btn-primary" id="sixth_one"><h4><a data-toggle="modal" data-target="#myModal">
+            Challenges
+            </a></h4></div>
+            </div>
+        </div>
+
+        <div class = "page_box">
+            <a href=""><img src="Photos\port2.png"></a>
+            <p>
+                Here's this site! My latest foray into responsive design. Built with a mobile first approach, I have used a couple of technologies to make this work. First, Bootstrap for some responsive dropdown navigation. Secondly, media queries to adjust the CSS as the viewport grows in size. And finally, modernizr to make sure the media queries work on older browsers.
+            </p>
+            <!-- Modal Button -->
+            <div class="challenge_box btn btn-primary" id="seventh_one"><h4><a data-toggle="modal" data-target="#myModal">
+            Challenges
+            </a></h4></div>
+            </div>
+        </div>
+
+<!-- incase you need to copy for more sites!
+        <div class = "page_box">
+            <a href=""><img src="Photos\"></a>
+            <p></p>
+            <! Modal Button >
+            <div class="challenge_box btn btn-primary" id="_one"><h4><a data-toggle="modal" data-target="#myModal">
+            Challenges
+            </a></h4></div>
+            </div>
+        </div>
+        -->
+    
+</section>
+</main>
+<footer>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="port.js"></script>
+</body>
+</html>
